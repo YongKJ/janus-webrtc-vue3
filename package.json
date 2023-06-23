@@ -7,10 +7,18 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "ant-design-vue": "^3.2.20",
+    "autobind-decorator": "^2.4.0",
     "core-js": "^3.8.3",
+    "custom-vue-scrollbar": "^0.0.7",
+    "eventemitter2": "^6.4.9",
+    "isomorphic-ws": "^5.0.0",
+    "socket.io-client": "^4.6.1",
+    "tsparticles": "^2.10.1",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
-    "vuex": "^4.0.0"
+    "vuex": "^4.0.0",
+    "ws": "^8.13.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",
