@@ -12,7 +12,7 @@
 <script lang="ts">
 import WallpaperPlus from "@/components/WallpaperPlus.vue";
 import {DemoTestService} from "@/common/service/DemoTestService";
-import {defineComponent, getCurrentInstance, onMounted, ref} from "vue";
+import {defineComponent, getCurrentInstance, ref} from "vue";
 
 export default defineComponent({
   name: "Test",
