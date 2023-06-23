@@ -7,12 +7,14 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@types/lodash-es": "^4.17.7",
     "ant-design-vue": "^3.2.20",
     "autobind-decorator": "^2.4.0",
     "core-js": "^3.8.3",
     "custom-vue-scrollbar": "^0.0.7",
     "eventemitter2": "^6.4.9",
     "isomorphic-ws": "^5.0.0",
+    "lodash-es": "^4.17.21",
     "socket.io-client": "^4.6.1",
     "tsparticles": "^2.10.1",
     "vue": "^3.2.13",
