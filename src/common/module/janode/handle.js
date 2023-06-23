@@ -382,7 +382,8 @@ class Handle extends EventEmitter {
    * @returns {boolean} True if this handle is the owner
    */
   ownsTransaction(id) {
-    return this._tm.getTransactionOwner(id) === this;
+    // return this._tm.getTransactionOwner(id) === this;
+    return this._tm.has(id);
   }
 
   /**

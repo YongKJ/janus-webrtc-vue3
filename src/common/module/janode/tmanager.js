@@ -162,7 +162,7 @@ class TransactionManager {
   closeTransactionWithError(id, owner, error) {
     const tx = this.get(id);
     if (!tx) return;
-    if (tx.owner !== owner) return;
+    // if (tx.owner !== owner) return;
     this.delete(id);
     tx.error(error);
     Logger.verbose(`${LOG_NS} [${tx.owner.id}] closed with error transaction ${id}, request "${tx.request}"`);
@@ -196,7 +196,7 @@ class TransactionManager {
   closeTransactionWithSuccess(id, owner, data) {
     const tx = this.get(id);
     if (!tx) return;
-    if (tx.owner !== owner) return;
+    // if (tx.owner !== owner) return;
     this.delete(id);
     tx.done(data);
     Logger.verbose(`${LOG_NS} [${tx.owner.id}] closed with success transaction ${id}, request "${tx.request}"`);
