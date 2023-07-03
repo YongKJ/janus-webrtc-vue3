@@ -24,8 +24,8 @@ export abstract class CommonService<U> extends EventEmitter2 implements BaseServ
 
     protected constructor(vue: ComponentInternalInstance | null) {
         super();
-        this._vue = <ComponentPublicInstance>(<ComponentInternalInstance>vue).proxy;
         if (CommonService.mapVue.size === 0) CommonService.service = this;
+        this._vue = <ComponentPublicInstance>(<ComponentInternalInstance>vue).proxy;
         CommonService.mapVue.set(this.getServiceName() + (this.getProp("index") || 0), this.vue);
     }
 
